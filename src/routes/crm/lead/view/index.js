@@ -13,7 +13,6 @@ import ProfileTabs from "Components/Layout/ProfileTabs";
 // Tabs
 import LeadOverviewTab from "./tabs/Overview";
 import LeadDetailsTab from "./tabs/Details";
-import EventsTab from "../../components/EventsTab";
 import FollowUpTab from "../../components/FollowUp/Tab";
 // Modals
 import ConvertLeadModal from "../components/dialogs/ConvertLead";
@@ -160,13 +159,7 @@ class crm_view_lead extends Component {
                   <div label="Follow Ups">
                     <FollowUpTab />
                   </div>
-                  <div label="Events">
-                    <EventsTab
-                      events={lead.events}
-                      eventableType={"Lead"}
-                      eventableId={lead.id}
-                    />
-                  </div>
+
                   <div label="Details">
                     <LeadDetailsTab lead={lead} />
                   </div>

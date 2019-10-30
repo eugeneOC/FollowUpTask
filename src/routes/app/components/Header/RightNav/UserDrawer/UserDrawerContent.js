@@ -13,9 +13,6 @@ import Avatar from "Components/Avatar";
 import { logoutUser } from "Ducks/session/auth";
 import Auth from "Auth";
 
-// Calendar widget
-import Calendar from "Components/Widgets/Calendar/CalendarLayout";
-
 function UserDrawerContent(props) {
   const toggleDrawer = props.toggleDrawer;
   const { loggedInUser, history } = props;
@@ -45,9 +42,7 @@ function UserDrawerContent(props) {
         autoHeightMin={350}
         style={{ maxHeight: "calc(100vh - 250px)" }}
       >
-        <div className="user-drawer-content">
-          <Calendar />
-        </div>
+        <div className="user-drawer-content"></div>
       </Scrollbars>
       <div className="drawer-footer">
         <hr />

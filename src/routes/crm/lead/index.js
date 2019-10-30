@@ -62,26 +62,11 @@ class crm_lead extends Component {
         <PageTitleBar
           title={nowShowing}
           actionGroup={{
-            add: { onClick: this.newLead },
             // mid: { label: "Import", onClick: this.importLead },
             more: [{ label: "Refresh List", onClick: this.refresh }]
           }}
         />
-        {/* <div className="d-flex">
-          <ListViewSelector
-            options={options}
-            nowShowing={nowShowing}
-            onChangeValue={this.props.changeLeadView}
-          />
-          <ShowListSummaryButton action={() => this.toggleSummary()} />
-        </div> 
-        this.state.showSummary && <ListSummary summary={summary} /> */}
-        <LeadList
-          // title={nowShowing}
-          action={action}
-          tableData={tableData}
-          loading={loading}
-        />
+        <LeadList action={action} tableData={tableData} loading={loading} />
       </React.Fragment>
     );
   }

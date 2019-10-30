@@ -3,15 +3,15 @@
  */
 const AppConfig = {
   appLogo: require("Assets/img/logo-1.jpg"), // App Logo
-  tagLine: "For Your Everyday System Needs",
-  brandName: "Everyday", // Brand Name
+  tagLine: "For System Needs",
+  brandName: "task", // Brand Name
   locale: {
     languageId: "english",
     locale: "en",
     name: "English",
     icon: "en"
   },
-  copyRightText: "Everyday © All Rights Reserved.", // Copy Right Text
+  copyRightText: "task © All Rights Reserved.", // Copy Right Text
   // light theme colors
   themeColors: {
     primary: "#ff952e",
